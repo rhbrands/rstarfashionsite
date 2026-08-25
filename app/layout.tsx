@@ -1,4 +1,5 @@
 import './globals.css'
+import Link from 'next/link'
 import { ReactNode } from 'react'
 
 export const metadata = {
@@ -12,11 +13,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body>
         <header className="border-b">
           <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-            <div className="text-xl font-semibold">Rstar Fashion</div>
+            <Link href="/" className="text-xl font-semibold">Rstar Fashion</Link>
             <nav className="space-x-4 hidden md:block">
-              <a className="text-gray-700">Home</a>
-              <a className="text-gray-700">Styles</a>
-              <a className="text-gray-700">About</a>
+              <Link href="/" className="text-gray-700">Home</Link>
+              <Link href="/styles" className="text-gray-700">Styles</Link>
+              <Link href="/#about" className="text-gray-700">About</Link>
             </nav>
           </div>
         </header>

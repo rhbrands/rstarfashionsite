@@ -20,6 +20,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section id="about" className="container mx-auto px-6 py-12">
+        <h2 className="text-2xl font-bold">About Rstar Fashion</h2>
+        <p className="mt-4 max-w-2xl text-gray-600">We create exclusive fashion designs and make each selected style to your measurements.</p>
+      </section>
     </main>
   )
 }
