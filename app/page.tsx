@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -9,8 +9,8 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold">WEAR YOUR STYLE. MADE FOR YOU.</h1>
             <p className="mt-4 text-lg text-gray-600">Discover exclusive fashion designs and have your selected style professionally made to your measurements.</p>
             <div className="mt-8 flex gap-4">
-              <button className="px-6 py-3 bg-black text-white rounded">Explore Styles</button>
-              <button className="px-6 py-3 border border-black rounded">Order a Custom Style</button>
+              <Link href="/styles" className="px-6 py-3 bg-black text-white rounded">Explore Styles</Link>
+              <Link href="/custom-order" className="px-6 py-3 border border-black rounded">Order a Custom Style</Link>
             </div>
           </div>
           <div className="flex-1">
